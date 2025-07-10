@@ -7,6 +7,17 @@
     "wdth" 100;
 }
 
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+
+/* body{
+    margin: 0 0;
+} */
+
 /* Shared Style */
 .secondary-bg{ /*bg=background*/
     background-color: #FFF8F3;
@@ -54,14 +65,18 @@
     background-image: url(../images/developer.png), url(../images/header_bg.png);
     background-repeat: no-repeat;
     background-position: top left, bottom right;
+    background-origin: content-box;
+    padding-top: 50px;
 }
 
 /* Nav Styles */
 nav{
     display: flex;
+    gap: 630px;
     align-items: center;
     justify-content: space-between;
-    margin: 51px 230px;
+    margin: 0px 230px;
+    padding-top: 50px 228px 0px 228px;
 }
 
 .nav-title{
@@ -88,7 +103,8 @@ nav li a{
 .banner{
     display: flex;
     justify-content: space-between;
-    margin: 0 35px 0 235px;
+    /* margin: 0 35px 0 235px; */
+    padding: 0 35px 0 235px;
 }
 
 .banner-content{
